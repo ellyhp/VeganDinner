@@ -1,0 +1,148 @@
+:root {
+    --ColorPrincipal: rgb(241, 240, 240);
+    --FuentePrincipal: 'Fjalla One', sans-serif;
+    --FuenteSecundaria: 'Oswald', sans-serif;;
+    --ColorSecundario: rgb(200, 218, 81);
+    --ColorTercero: rgb(0, 0, 0);
+    --ColorVerde: rgb(0, 97, 0);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px*/
+}
+
+*, *:before, *:after{
+    box-sizing: inherit; 
+}
+
+body {
+    font-family: var(--FuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 2; /* interlineado */
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.font-bold{
+    font-weight: bold;
+}
+
+.menu-navegation{
+    border-bottom: 1px solid var(--ColorSecundario);
+}
+/** Iniciando **/
+.header {
+    background-image: url(../img/background.jpg);
+    height: 60rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1srem;
+    padding: 0 6rem;
+    background-color: var(--ColorTercero);
+}
+
+.nav-colour{
+    color: var(--ColorPrincipal);
+}
+
+.space-container{
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-colour:hover{
+    color: var(--ColorSecundario);
+}
+.nav-tittle{
+    color: var(--ColorPrincipal);
+    font-size: 2rem;
+}
+
+.space-container{
+    display: flex;
+}
+
+/*  Menú chicken */
+
+.main-menu-chicken{
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    margin: 5% 0; 
+}
+.main--option{
+     display: flex;
+     justify-content: start;
+     align-items: center;
+     flex-direction: column;
+     margin: 5% 0;
+}
+.main--img {
+    max-width: 60%;
+}
+.main--img img{
+    border-radius: 2rem;
+}
+.main-dinner{
+    color: var(--ColorVerde);
+    font-size: 3rem;
+    text-align: center;
+    margin: 0px;
+}
+
+.main-title{
+    font-size: 2.5rem;
+    font-size: var(--FuenteSecundaria);
+    text-align: center;
+}
+
+.boton__comprar{
+    width: 20vmax;
+    cursor: pointer;
+    background-color: var(--ColorTercero);
+    color: var(--ColorPrincipal);
+    border-radius: 1rem;
+}
+
+.footer{
+    background-color: var(--ColorSecundario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 768px){
+    .main-menu-chicken{
+        display: grid;
+        grid-template-columns: repeat(2, 50%); 
+    }
+    .nav-container{
+        flex-direction: column;
+    }
+    .space-container{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .main-menu-chicken{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

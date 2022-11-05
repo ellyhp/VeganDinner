@@ -1,0 +1,3 @@
+vegans: https://www.bonappetit.com/diet/vegan
+chicken: https://www.bonappetit.com/ingredient/chicken-breast
+Ground Beef: https://www.bonappetit.com/ingredient/ground-beef
